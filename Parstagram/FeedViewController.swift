@@ -11,9 +11,9 @@ import Parse
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    let refreshControl = UIRefreshControl()
     var posts = [PFObject]()
-    
+    var numPosts = 2
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,14 +21,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        loadPosts()
+        refreshControl.addTarget(self, action: #selector(loadMorePosts), for: .valueChanged)
+        tableView.refreshControl = refreshControl
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    @objc func loadPosts() {
         let query = PFQuery(className:"Posts")
         query.includeKey("author")
-        query.limit = 20
+        query.limit = numPosts
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
@@ -37,6 +38,29 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             
         }
+    }
+    
+    @objc func loadMorePosts(){
+        numPosts += 10
+        
+        self.posts.removeAll()
+        let query = PFQuery(className:"Posts")
+        query.includeKey("author")
+        query.limit = numPosts
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+            self.refreshControl.endRefreshing()
+            
+        }
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadPosts()
         
     }
     
