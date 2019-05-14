@@ -318,14 +318,22 @@
             </objects>
             <point key="canvasLocation" x="2808.6956521739135" y="126.5625"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Parstagram-->
         <scene sceneID="IE6-h0-jLw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avy-bA-Z7c" sceneMemberID="viewController">
+                <navigationController title="Parstagram" automaticallyAdjustsScrollViewInsets="NO" id="avy-bA-Z7c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gha-eQ-zOU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99020039820000005" green="1" blue="0.98789749270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.99020039820000005" green="1" blue="0.98789749270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

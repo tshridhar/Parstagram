@@ -17,6 +17,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
+        self.title = "Parstagram"
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
