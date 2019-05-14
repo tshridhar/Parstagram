@@ -1,7 +1,7 @@
 # Parstagram - Part I
 
 This application is a bootleg Instagram that was built from front to back (end), featuring the ability to 
-view / post photos globally.
+view / post photos globally -- built with Parse. Features a customized interface that differs slightly in appearance.
 
 Time spent: **3** hours spent in total
 
@@ -20,10 +20,6 @@ The following **bonus** features are implemented:
 - [x] User can pull to refresh. (1pt)
 - [ ] User can load past posts infinitely. (2pts)
 
-## Video Walkthrough - Basic Functionality
+## Basic Functionality + Pull to Refresh
 
-<img src='http://g.recordit.co/QZnA9A2ftS.gif' title='Basic Functionality' width='250' alt='Video Walkthrough' />
-
-## Pull to Refresh
-
-<img src='http://g.recordit.co/zbseehfGNV.gif' title='Basic Functionality' width='250' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/SbGCCgzn88.gif' title='Basic Functionality' width='250' alt='Video Walkthrough' />
