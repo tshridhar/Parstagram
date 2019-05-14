@@ -3,7 +3,7 @@
 This application is a bootleg Instagram that was built from front to back (end), featuring the ability to 
 view / post photos globally -- built with Parse. Features a customized interface that differs slightly in appearance.
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
