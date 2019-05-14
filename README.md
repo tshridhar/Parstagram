@@ -22,4 +22,4 @@ The following **bonus** features are implemented:
 
 ## Basic Functionality + Pull to Refresh
 
-<img src='http://g.recordit.co/SbGCCgzn88.gif' title='Basic Functionality' width='250' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/KQfumLliID.gif' title='Basic Functionality' width='250' alt='Video Walkthrough' />                 <img src='http://g.recordit.co/FmeR5KOcMn.gif' title='Pull to refresh' width='250' alt='Video Walkthrough' />
