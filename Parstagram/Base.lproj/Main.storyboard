@@ -27,7 +27,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zs9-S6-Hjf">
                                 <rect key="frame" x="87" y="198" width="240" height="500"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram-logo-2" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-DU-3BI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parstagram1" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-DU-3BI">
                                         <rect key="frame" x="-2" y="48" width="244" height="217"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -318,7 +318,7 @@
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
-        <image name="instagram-logo-2" width="1050" height="1018"/>
         <image name="launch-screen-4k" width="2000" height="3000"/>
+        <image name="parstagram1" width="1050" height="1018"/>
     </resources>
 </document>

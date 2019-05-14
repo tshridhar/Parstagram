@@ -21,20 +21,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-4k" translatesAutoresizingMaskIntoConstraints="NO" id="Su3-r5-An7">
                                 <rect key="frame" x="-100" y="0.0" width="614" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="instagram-shadow-logo" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-86-mYD">
-                                <rect key="frame" x="10" y="315" width="394" height="204.00000000000045"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parstagram logo" translatesAutoresizingMaskIntoConstraints="NO" id="qT1-H4-JRR">
+                                <rect key="frame" x="0.0" y="335" width="414" height="226"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gSh-86-mYD" secondAttribute="bottom" constant="100" id="27d-on-DOh"/>
                             <constraint firstItem="Su3-r5-An7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8Hf-Rt-2jc"/>
-                            <constraint firstItem="gSh-86-mYD" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="FR3-jv-XVZ"/>
-                            <constraint firstItem="gSh-86-mYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TIN-C7-B9j"/>
+                            <constraint firstItem="qT1-H4-JRR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ANa-mE-Qag"/>
                             <constraint firstItem="Su3-r5-An7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-100" id="lbQ-rt-Nox"/>
-                            <constraint firstItem="gSh-86-mYD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="s8B-UY-Mkk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSh-86-mYD" secondAttribute="trailing" constant="10" id="ucR-aX-Skc"/>
+                            <constraint firstItem="qT1-H4-JRR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sMB-kp-FcW"/>
+                            <constraint firstItem="qT1-H4-JRR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vLC-YR-jl3"/>
                             <constraint firstAttribute="bottom" secondItem="Su3-r5-An7" secondAttribute="bottom" id="wUT-O6-U5p"/>
                             <constraint firstAttribute="trailing" secondItem="Su3-r5-An7" secondAttribute="trailing" constant="-100" id="wYj-tx-83X"/>
                         </constraints>
@@ -48,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="instagram-shadow-logo" width="229.5" height="103"/>
         <image name="launch-screen-4k" width="2000" height="3000"/>
+        <image name="parstagram logo" width="906.5" height="226"/>
     </resources>
 </document>
