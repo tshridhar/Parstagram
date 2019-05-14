@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-screen-4k" translatesAutoresizingMaskIntoConstraints="NO" id="CiR-1w-vIB">
-                                <rect key="frame" x="-69" y="81" width="553" height="815"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-4k" translatesAutoresizingMaskIntoConstraints="NO" id="CiR-1w-vIB">
+                                <rect key="frame" x="-69" y="0.0" width="553" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAL-ay-mtk">
                                 <rect key="frame" x="93" y="463" width="84" height="21"/>
@@ -106,6 +105,12 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CiR-1w-vIB" secondAttribute="bottom" id="5qZ-7I-qOM"/>
+                            <constraint firstItem="CiR-1w-vIB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-69" id="RRd-Rd-UrA"/>
+                            <constraint firstItem="CiR-1w-vIB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SMu-Ce-eXu"/>
+                            <constraint firstAttribute="trailing" secondItem="CiR-1w-vIB" secondAttribute="trailing" constant="-70" id="yqW-H4-lip"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
