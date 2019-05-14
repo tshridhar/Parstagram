@@ -13,7 +13,7 @@ import AlamofireImage
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let refreshControl = UIRefreshControl()
     var posts = [PFObject]()
-    var numPosts = 2
+    var numPosts = 10
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

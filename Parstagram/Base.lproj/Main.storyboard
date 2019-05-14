@@ -232,54 +232,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="PJn-aI-Egb">
-                                <rect key="frame" x="20" y="62" width="374" height="339"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="d3b-be-WDJ" appends="YES" id="MVz-uo-c39"/>
-                                </connections>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-iX-yTJ">
-                                <rect key="frame" x="20" y="451" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKB-1Z-F4W">
-                                <rect key="frame" x="20" y="413" width="94" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7Y-Z1-f9p">
-                                <rect key="frame" x="20" y="489" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="onSubmitButton:" destination="O9Q-f1-Cbc" eventType="touchUpInside" id="bU3-WZ-JXP"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-zz-5HE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="PJn-aI-Egb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="d3b-be-WDJ" appends="YES" id="MVz-uo-c39"/>
+                                        </connections>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-iX-yTJ">
+                                        <rect key="frame" x="20" y="415" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKB-1Z-F4W">
+                                        <rect key="frame" x="20" y="383" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7Y-Z1-f9p">
+                                        <rect key="frame" x="20" y="469" width="374" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSubmitButton:" destination="O9Q-f1-Cbc" eventType="touchUpInside" id="bU3-WZ-JXP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KKB-1Z-F4W" firstAttribute="top" secondItem="PJn-aI-Egb" secondAttribute="bottom" constant="8" id="2Ek-Jm-Tka"/>
+                                    <constraint firstAttribute="trailing" secondItem="KKB-1Z-F4W" secondAttribute="trailing" constant="20" id="9Yb-zg-SWi"/>
+                                    <constraint firstItem="PJn-aI-Egb" firstAttribute="leading" secondItem="M3l-zz-5HE" secondAttribute="leading" id="Nts-BA-U6e"/>
+                                    <constraint firstAttribute="trailing" secondItem="U7Y-Z1-f9p" secondAttribute="trailing" constant="20" id="PHA-7A-H3v"/>
+                                    <constraint firstItem="FXT-iX-yTJ" firstAttribute="top" secondItem="KKB-1Z-F4W" secondAttribute="bottom" constant="8" id="QYg-uh-axq"/>
+                                    <constraint firstItem="U7Y-Z1-f9p" firstAttribute="leading" secondItem="M3l-zz-5HE" secondAttribute="leading" constant="20" id="WPh-mp-T3M"/>
+                                    <constraint firstAttribute="trailing" secondItem="PJn-aI-Egb" secondAttribute="trailing" id="b9D-P8-Yfx"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="U7Y-Z1-f9p" secondAttribute="bottom" constant="20" id="ivB-j4-uFC"/>
+                                    <constraint firstItem="U7Y-Z1-f9p" firstAttribute="top" secondItem="FXT-iX-yTJ" secondAttribute="bottom" constant="24" id="kme-9Q-tEx"/>
+                                    <constraint firstItem="KKB-1Z-F4W" firstAttribute="leading" secondItem="M3l-zz-5HE" secondAttribute="leading" constant="20" id="ktm-pZ-3ie"/>
+                                    <constraint firstItem="FXT-iX-yTJ" firstAttribute="leading" secondItem="M3l-zz-5HE" secondAttribute="leading" constant="20" id="rbw-aX-C3U"/>
+                                    <constraint firstItem="PJn-aI-Egb" firstAttribute="top" secondItem="M3l-zz-5HE" secondAttribute="top" id="uro-tL-i6K"/>
+                                    <constraint firstAttribute="trailing" secondItem="FXT-iX-yTJ" secondAttribute="trailing" constant="20" id="yCf-oh-GeR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="M3l-zz-5HE" secondAttribute="bottom" id="Q06-II-78c"/>
+                            <constraint firstItem="M3l-zz-5HE" firstAttribute="leading" secondItem="WZi-fE-z9w" secondAttribute="leading" id="i1A-hr-09a"/>
+                            <constraint firstItem="M3l-zz-5HE" firstAttribute="top" secondItem="yVz-hT-Fpx" secondAttribute="top" id="psV-JA-1Hb"/>
+                            <constraint firstItem="M3l-zz-5HE" firstAttribute="trailing" secondItem="WZi-fE-z9w" secondAttribute="trailing" id="vCb-om-fH5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WZi-fE-z9w"/>
                     </view>
                     <connections>
