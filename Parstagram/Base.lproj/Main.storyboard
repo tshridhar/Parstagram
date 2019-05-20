@@ -169,7 +169,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="caption text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-7e-X4E">
-                                                    <rect key="frame" x="64.5" y="445" width="337.5" height="20"/>
+                                                    <rect key="frame" x="64.5" y="445" width="128" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -179,8 +179,7 @@
                                             <constraints>
                                                 <constraint firstItem="Od1-7e-X4E" firstAttribute="leading" secondItem="CY4-tK-7LR" secondAttribute="trailing" constant="10" id="6uA-Yn-Dy0"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Od1-7e-X4E" secondAttribute="bottom" constant="8" id="8nR-H4-dNS"/>
-                                                <constraint firstAttribute="trailing" secondItem="Od1-7e-X4E" secondAttribute="trailing" constant="12" id="EO7-ZT-PXF"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CY4-tK-7LR" secondAttribute="bottom" constant="8" id="IpY-MU-Jx1"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Od1-7e-X4E" secondAttribute="trailing" constant="12" id="EO7-ZT-PXF"/>
                                                 <constraint firstItem="fmF-cO-uFy" firstAttribute="leading" secondItem="AeS-ID-dao" secondAttribute="leading" id="Y2o-JB-ohG"/>
                                                 <constraint firstItem="Od1-7e-X4E" firstAttribute="top" secondItem="fmF-cO-uFy" secondAttribute="bottom" constant="8" id="aG5-pe-PBD"/>
                                                 <constraint firstItem="CY4-tK-7LR" firstAttribute="leading" secondItem="AeS-ID-dao" secondAttribute="leading" constant="16" id="gyn-7h-xlL"/>
@@ -204,17 +203,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-ge-Bn9">
-                                                    <rect key="frame" x="16" y="9.5" width="39" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-ge-Bn9">
+                                                    <rect key="frame" x="16" y="9.5" width="38.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="comment text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-E1-DDR">
-                                                    <rect key="frame" x="65" y="9.5" width="145" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="145" id="IHT-lL-gfP"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-E1-DDR">
+                                                    <rect key="frame" x="64.5" y="9.5" width="144.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99020039820000005" green="1" blue="0.98789749270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -222,15 +218,12 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.1079837329" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="baseline" secondItem="GI3-ge-Bn9" secondAttribute="firstBaseline" id="1bf-v5-ROV"/>
                                                 <constraint firstItem="GI3-ge-Bn9" firstAttribute="top" secondItem="yWP-V8-HVJ" secondAttribute="top" constant="9.25" id="AVb-zZ-tFS"/>
                                                 <constraint firstItem="YR8-E1-DDR" firstAttribute="top" secondItem="yWP-V8-HVJ" secondAttribute="top" constant="9.25" id="GMp-RQ-Vlj"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YR8-E1-DDR" secondAttribute="bottom" constant="9.25" id="N3d-u4-Tsm"/>
-                                                <constraint firstItem="GI3-ge-Bn9" firstAttribute="bottom" secondItem="YR8-E1-DDR" secondAttribute="bottom" id="Paa-NM-aKG"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YR8-E1-DDR" secondAttribute="trailing" constant="12" id="YCt-wE-ANT"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YR8-E1-DDR" secondAttribute="trailing" constant="10" id="YCt-wE-ANT"/>
                                                 <constraint firstItem="GI3-ge-Bn9" firstAttribute="leading" secondItem="yWP-V8-HVJ" secondAttribute="leading" constant="16" id="a8I-1h-uW0"/>
-                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GI3-ge-Bn9" secondAttribute="trailing" constant="10" id="aPo-BA-ks1"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GI3-ge-Bn9" secondAttribute="bottom" constant="9.25" id="mVo-fY-pLM"/>
+                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="leading" secondItem="GI3-ge-Bn9" secondAttribute="trailing" constant="10" id="aPo-BA-ks1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.1079837329" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
