@@ -9,12 +9,16 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MessageInputBar
+
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let refreshControl = UIRefreshControl()
     var posts = [PFObject]()
     var numPosts = 10
     @IBOutlet weak var tableView: UITableView!
+    
+    let commentBar = MessageInputBar()
     
     override func viewDidLoad() {
         self.title = "Parstagram"
@@ -25,6 +29,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         loadPosts()
         refreshControl.addTarget(self, action: #selector(loadMorePosts), for: .valueChanged)
         tableView.refreshControl = refreshControl
+    }
+    
+    override var inputAccessoryView: UIView? {
+        return commentBar
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
     }
     
     @objc func loadPosts() {
