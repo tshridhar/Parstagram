@@ -204,14 +204,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-ge-Bn9">
-                                                    <rect key="frame" x="16" y="9.5" width="38.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-ge-Bn9">
+                                                    <rect key="frame" x="16" y="9.5" width="39" height="21"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.99020039820000005" green="1" blue="0.98789749270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-E1-DDR">
-                                                    <rect key="frame" x="64.5" y="9.5" width="144.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="comment text here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-E1-DDR">
+                                                    <rect key="frame" x="65" y="9.5" width="145" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="145" id="IHT-lL-gfP"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99020039820000005" green="1" blue="0.98789749270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -219,12 +222,14 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.1079837329" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="baseline" secondItem="GI3-ge-Bn9" secondAttribute="firstBaseline" id="1bf-v5-ROV"/>
                                                 <constraint firstItem="GI3-ge-Bn9" firstAttribute="top" secondItem="yWP-V8-HVJ" secondAttribute="top" constant="9.25" id="AVb-zZ-tFS"/>
                                                 <constraint firstItem="YR8-E1-DDR" firstAttribute="top" secondItem="yWP-V8-HVJ" secondAttribute="top" constant="9.25" id="GMp-RQ-Vlj"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YR8-E1-DDR" secondAttribute="bottom" constant="9.25" id="N3d-u4-Tsm"/>
+                                                <constraint firstItem="GI3-ge-Bn9" firstAttribute="bottom" secondItem="YR8-E1-DDR" secondAttribute="bottom" id="Paa-NM-aKG"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YR8-E1-DDR" secondAttribute="trailing" constant="12" id="YCt-wE-ANT"/>
                                                 <constraint firstItem="GI3-ge-Bn9" firstAttribute="leading" secondItem="yWP-V8-HVJ" secondAttribute="leading" constant="16" id="a8I-1h-uW0"/>
-                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="leading" secondItem="GI3-ge-Bn9" secondAttribute="trailing" constant="10" id="aPo-BA-ks1"/>
+                                                <constraint firstItem="YR8-E1-DDR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GI3-ge-Bn9" secondAttribute="trailing" constant="10" id="aPo-BA-ks1"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GI3-ge-Bn9" secondAttribute="bottom" constant="9.25" id="mVo-fY-pLM"/>
                                             </constraints>
                                         </tableViewCellContentView>
