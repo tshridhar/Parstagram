@@ -19,8 +19,8 @@ The following **bonus** features are implemented:
 - [ ] Profile pictures are shown for posts and comments. (2pts)
 
 ## UI + Commenting + Staying Logged In/Out
-<img src='http://g.recordit.co/7g0ZtfgXjU.gif' title='Basic Functionality' width='300' alt='Video Walkthrough' /> <img src='http://g.recordit.co/stAZqj4Woc.gif' title='Basic Functionality' width='300' alt='Video Walkthrough' />
-<img src='http://g.recordit.co/Gr9pcEXsT7.gif' title='Basic Functionality' width='300' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/7g0ZtfgXjU.gif' title='Basic Functionality' width='200' alt='Video Walkthrough' /> <img src='http://g.recordit.co/stAZqj4Woc.gif' title='Basic Functionality' width='200' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/Gr9pcEXsT7.gif' title='Basic Functionality' width='200' alt='Video Walkthrough' />
 
 
 # Parstagram - Part I
